@@ -1,0 +1,123 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- add the font family of your choice -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>MUSIC VIDEO</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+       <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">Playlists</a></li>
+        <!-- Add or remove navigation items as needed -->
+      </ul> 
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="container">
+      <!-- Media Player Section -->
+      <div class="media-player">
+        <video id="custom-video-player" controls>
+          <source
+            src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
+            type="video/mp4"
+          />
+        </video>
+        
+        <div class="custom-controls">
+            <button id="low-volume" onclick="decreaseVolume()" aria-label="Decrease Volume">
+                <img
+                  id="low-volume-image"
+                  src="https://img.icons8.com/?size=100&id=91634&format=png&color=000000"
+                  alt="Decrease volume"
+                  width="24"
+                  height="24"
+                />
+              </button>
+          
+              <button id="rewind-video" onclick="toggleForwardVideo(-15)">
+                <img
+                  id="rewind-video-image"
+                  src="https://img.icons8.com/?size=100&id=91480&format=png&color=000000"
+                  alt="rewind-button"
+                  width="24"
+                  height="24"
+                />
+              </button>
+          <button id="play-pause-btn" onclick="togglePlayPause()">
+            <img
+              id="play-pause-img"
+              src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+              alt="Play Button"
+              width="24"
+              height="24"
+            />
+            <button id="forward-video" onclick="toggleForwardVideo(15)">
+                <img
+                  id="forward-video-image"
+                  src="https://img.icons8.com/?size=100&id=91476&format=png&color=000000"
+                  alt="Forward-button"
+                  width="24"
+                  height="24"
+                />
+              </button>
+          <button id="grow-volume" onclick="increaseVolume()" aria-label="Increase Volume">
+            <img
+              id="grow-volume-image"
+              src="https://img.icons8.com/?size=100&id=59734&format=png&color=000000"
+              alt="Increase volume"
+              width="24"
+              height="24"
+            />
+          </button>
+          <!-- add the missing buttons or functionality here -->
+        </div>
+      </div>
+      <div class="progress-bar">
+        <input type="range" id="timeline" value="0" class="seek-bar" />
+    <span class="current-time">00:00</span> 
+    <span class="music-time">00:00</span>     
+</div>
+      <!-- These video are my assignments in Digital Video course -->
+      <section>
+        <h2>RELATIVE VIDEOS</h2>
+        <video id="hi" controls>
+            <source
+              src="https://youtu.be/EhvvCLF8DvA?si=8HkaeDh7BByRImTN"
+              type="video/mp4"
+            />
+          </video>
+          <video id="hi" controls>
+            <source
+              src="https://youtu.be/kI2-FvoBj04?si=T5cFs80DuBSIbnq6"
+              type="video/mp4"
+            />
+          </video>
+        <p>These videos relate with the main video</p>
+        <!-- Add more content as needed -->
+      </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 Music Video Website. All rights reserved.</p>
+      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+    </footer>
+  </body>
+</html>
+
