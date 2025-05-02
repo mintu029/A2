@@ -1,7 +1,7 @@
 :root {
   --primary-bg-color: #000000;
   --text-color: #e3e3e3;
-  --main-bg-color: #981212a8;
+  --main-bg-color: #b5a67385;
   --main-text-color: #ffffff;
   --main-btn-bg-color: #576ad5;
 }
@@ -16,20 +16,21 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+/* I used a background image of the State Library that I took myself. I think for an art video, it makes sense to have images in an art location. It makes the viewer feel like they are really immersed in the art space. */
 body {
   height: 100%;
   background: #fff8db url(DSC09713.jpg) no-repeat;
-
-  background-size: 2200px 1216px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  background-size: 2300px 1316px;
   font-family: Arial, Verdana, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: normal;
   color: #404040;
   line-height: 20px;
 }
-
-/* Add additional styles as needed */
 
 /* Create a container for the main content */
 .container {
@@ -69,7 +70,7 @@ nav a {
   color: var(--text-color);
 }
 
-/* Media player styling */
+/* I put the main video in the frame to highlight it more, making the viewer know that it is the main video that I want to convey. */
 .media-player {
   width: 100%;
   margin: 0 auto;
@@ -125,7 +126,7 @@ nav a {
 .seek-bar {
   margin-top: 15;
   width: 100%;
-  height: 2%;
+  height: 1%;
   border-radius: 1px;
   background-color: #ececec;
   cursor: pointer;
@@ -134,10 +135,10 @@ nav a {
 
 .seek-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 10px;
+  width: 1000px;
   height: 10px;
   background: #088d2c;
-  box-shadow: -400px 0 0 400px #810000d6;
+  box-shadow: -4000px 0 0 4000px #810000d6;
 }
 .current-time,
 .music-time {
@@ -161,4 +162,12 @@ footer {
 h2 {
   color: #ffffff;
   font-size: 20px;
+}
+hi {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+p {
+  color: #ffffff;
+  font-size: 16px;
 }

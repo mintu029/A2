@@ -3,31 +3,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- add the font family of your choice -->
+    <!-- The font which I choose is Courier -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- Header Section -->
+    <!-- I chose to create a website based on the theme of a music video because it combines visual storytelling, rhythm, and emotion—all powerful tools to engage an audience. Music videos allow for creative expression through sound, imagery, and editing, making them an ideal subject for designing an interactive and immersive website. The goal is to reflect the energy and mood of the music video through layout, visuals, and user interaction. By doing this, I hope to create a space where users don’t just watch the video, but feel and experience it in a more dynamic and personal way. -->
     <header>
       <h1>MUSIC VIDEO</h1>
     </header>
 
-    <!-- Navigation Section -->
+    <!-- I was going to add more navigation buttons but I found it didn't work for my site so I just kept the homepage.-->
     <nav>
        <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Playlists</a></li>
-        <!-- Add or remove navigation items as needed -->
+  
+        <!-- I just keep the Home item for navigation items -->
       </ul> 
     </nav>
 
-    <!-- Main Content Section -->
+    <!-- I decided to add the necessary buttons such as volume up, volume down, fast forward and rewind. The reason is that I found these functions really important to help users control the content more flexibly during the website experience. Adding these buttons helps improve usability, while creating a more professional and friendly feel for the viewer. -->
     <main class="container">
-      <!-- Media Player Section -->
+      <!-- All buttons have been listed in the code section -->
       <div class="media-player">
         <video id="custom-video-player" controls>
           <source
@@ -90,32 +88,50 @@
     <span class="current-time">00:00</span> 
     <span class="music-time">00:00</span>     
 </div>
-      <!-- These video are my assignments in Digital Video course -->
+      <!-- These videos are my assignments in Digital Video course. I used them because they are all abstract music videos. They have similar visuals to the main video, and the content is similar. -->
       <section>
         <h2>RELATIVE VIDEOS</h2>
         <video id="hi" controls>
-            <source
-              src="https://youtu.be/EhvvCLF8DvA?si=8HkaeDh7BByRImTN"
-              type="video/mp4"
-            />
+            <iframe src="https://archive.org/embed/timeline-1_202505" 
+            width="560"
+            height="384"
+            frameborder="0"
+            webkitallowfullscreen="true"
+            mozallowfullscreen="true"
+            allowfullscreen
+           ></iframe>
+              </video>
           </video>
           <video id="hi" controls>
-            <source
-              src="https://youtu.be/kI2-FvoBj04?si=T5cFs80DuBSIbnq6"
-              type="video/mp4"
-            />
+            <iframe
+            src="https://archive.org/embed/le_minh_tu_s4001977_a1"
+            width="560"
+            height="384"
+            frameborder="0"
+            webkitallowfullscreen="true"
+            mozallowfullscreen="true"
+            allowfullscreen
+          ></iframe>
           </video>
         <p>These videos relate with the main video</p>
         <!-- Add more content as needed -->
       </section>
     </main>
     
-    <!-- Footer Section -->
+    <!-- I have added more reference about icons which I used -->
     <footer>
       <p>&copy; 2025 Music Video Website. All rights reserved.</p>
       <a href="https://icons8.com/icon/59862/play">Play</a> icon by
       <a href="https://icons8.com">Icons8</a>
       <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/59734/audio">Increase Volume</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/91634/low-volume">Decrease Volume</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/91476/fast-forward">Fast Forward Video</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/91480/rewind">Rewind Video</a> icon by
       <a href="https://icons8.com">Icons8</a>
     </footer>
   </body>

@@ -22,31 +22,30 @@ function updateProgressBar() {
   const value = (video.currentTime / video.duration) * 100;
   progressBar.style.width = value + "%";
 }
-// Chuyển giây thành định dạng mm:ss
+// Convert seconds to mm:ss format so the machine can understand and process the time data I want.
 function formatTime(seconds) {
   const mins = Math.floor(seconds / 60);
   const secs = Math.floor(seconds % 60);
   return `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
 }
 
-// Cập nhật thời lượng video khi sẵn sàng
+// Update video duration when ready. With this command the algorithm will help the computer understand and update the time according to my intention
 video.addEventListener("loadedmetadata", () => {
   seekBar.max = video.duration;
   durationEl.textContent = formatTime(video.duration);
 });
 
-// Cập nhật thanh seekBar và thời gian hiện tại khi video đang phát
+// Updating the seekBar and the current time as the video plays, helps us know how long the video is. And it seems that when I create the seekBar and the time outside the video, it makes it easier to see. And gives my site some personality. This is the part I think I spent the most time on, because I was stuck trying to figure out how to solve the problem.
 video.addEventListener("timeupdate", () => {
   seekBar.value = video.currentTime;
   currentTimeEl.textContent = formatTime(video.currentTime);
 });
 
-// Khi kéo seekBar thì cập nhật thời gian video
+// When dragging the seekBar, the video time is updated. I think this part also caused me a lot of trouble. Because I mixed up the names in the algorithm. But when I fixed it successfully, the result was really worth it.
 seekBar.addEventListener("input", () => {
   video.currentTime = seekBar.value;
 });
 video.addEventListener("timeupdate", updateProgressBar);
-// Add other functionalities here
 
 function increaseVolume() {
   // Increase volume by 0.1
@@ -57,7 +56,7 @@ function decreaseVolume() {
   video.volume = Math.max(video.volume - 0.1, 0.0);
 }
 
-// Add event listeners to the volume buttons
+// Add event listeners to the volume buttons, to everyone can interact with these button
 growVolumeBtn.addEventListener("click", increaseVolume);
 lowVolumeBtn.addEventListener("click", decreaseVolume);
 
